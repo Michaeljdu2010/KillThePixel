@@ -1,11 +1,22 @@
 require(["jquery", 
-	     "findWidth"
+	     "findWidth",
+	     "rebuildDom"
 	     ], 
  function($, 
-   	     findWidth){
+   	     findWidth,
+   	     rebuild){
 
-      $(".btn_convert").on("click", function(){ 
-     allWidth = new findWidth(); 
-     $("#testing_area").text(allWidth.splitCSS("#txt_css")); 
+     $(".btn_convert").on("click", function(){ 
+
+     // initializing needed Object Instances  
+     allWidthRules = new findWidth();
+     DOM_model = new rebuild();  
+     
+
+     // Parsing the CSS for relevant Rules and setting up a model DOM structure based on input 
+     allWidthRules.splitCSS("#txt_css"); 
+     DOM_model.rebuild("#txt_dom", "#testing_area");
+
+     
   }); 	   
 });
