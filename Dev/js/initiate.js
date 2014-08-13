@@ -14,8 +14,10 @@ require(["jquery",
      
 
      // Parsing the CSS for relevant Rules and setting up a model DOM structure based on input 
-     allWidthRules.splitCSS("#txt_css"); 
+     elementsWithWidth = allWidthRules.splitCSS("#txt_css"); 
      DOM_model.rebuild("#txt_dom", "#testing_area");
+     
+
 
      
   }); 	   
