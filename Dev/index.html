@@ -1,0 +1,38 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Mockwire site</title>
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="Michael Du">
+
+  <link rel="stylesheet" href="style/main.css">
+
+  <!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+   
+<h1><span class="emphasis"> KILL </span> - THE - PIXELS </h1> 
+
+   A simple proof of concept right now.  Put in the CSS in the text area below, and it'll spit out the un-pixalated,
+   responsive equivalent: 
+
+  <br /> 
+  <textarea rows="4" cols="60" placeholder="HTML DOM here" id="txt_dom"></textarea> 
+  <textarea rows="4" cols="60" placeholder="CSS here" id="txt_css"></textarea> <br/> 
+  <input type="text" placeholder="Screen Width (if unspecified, default: 1400px)" id="txt_maxWidth" style="width:400px;" /> 
+  <button class="btn_convert" type="button"> Convert </button> 
+
+  
+  
+
+<script src="js/vendor/Requirejs/require.js"> </script> 
+<script src="js/main.js"> </script> 
+<script src="js/initiate.js"> </script> 
+</body>
+</html>
