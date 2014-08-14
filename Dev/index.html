@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
 
-  <title>Kill the Pixels</title>
+  <title>PIXEL - SMASH</title>
   <meta name="description" content="The HTML5 Herald">
   <meta name="author" content="Michael Du">
 
@@ -17,21 +17,24 @@
 
 <body>
    
-<h1><span class="emphasis"> KILL </span> - THE - PIXELS </h1> 
+<h1><span class="emphasis">Pixel</span>SMASH </h1> 
 
-   A simple proof of concept right now.  Put in the CSS in the text area below, and it'll spit out the un-pixalated,
+   Put your DOM on the left, your CSS on the right, and I'll spit out the un-pixalated,
    responsive equivalent: 
 
   <br /> 
-  <textarea rows="4" cols="60" placeholder="HTML DOM here" id="txt_dom"></textarea> 
-  <textarea rows="4" cols="60" placeholder="CSS here" id="txt_css"></textarea> <br/> 
+  <textarea rows="15" cols="60" placeholder="HTML DOM here" id="txt_dom"></textarea> 
+  <textarea rows="15" cols="60" placeholder="CSS here" id="txt_css"></textarea> <br/> 
   <input type="text" placeholder="Screen Width (if unspecified, default: 1400px)" id="txt_maxWidth" style="width:400px;" /> 
   <button class="btn_convert" type="button"> Convert </button> 
 
-  <div id="testing_area">
+  <div id="testing_area" style="display:none">
   
   </div> 
+
+  <br/><br/> Your responsive CSS output below: </br> 
   
+  <textarea rows="15" cols="60" id="txt_output"></textarea> 
 
 <script src="js/vendor/Requirejs/require.js"> </script> 
 <script src="js/main.js"> </script> 
