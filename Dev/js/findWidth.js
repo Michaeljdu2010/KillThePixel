@@ -32,15 +32,11 @@ define(["jquery"], function($){
           var justWidth = "not found"; 
           var tempArray = allCssRules[i].split(";");
           for (j=0; j < tempArray.length; j++){
-        //     console.log (j + "raw: " + tempArray[j]); 
-        //     console.log (j + " " + (tempArray[j].toLowerCase().indexOf("width") >= 0));
-        //     console.log (j + " " + !(tempArray[j].toLowerCase().indexOf("-width") >= 0)); 
              if (tempArray[j].toLowerCase().indexOf("width") >= 0 && 
                 !(tempArray[j].toLowerCase().indexOf("-width") >= 0)){
                    justWidth = parseInt(tempArray[j].substr(tempArray[j].indexOf(":") + 1)); 
              }
           }
-
         	  onlyWidthRules.push({
                "element" : allCssRules[i].split("{")[0], 
                "width" : justWidth  
