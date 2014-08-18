@@ -1,5 +1,234 @@
-@bk-color: gray;
+@logo-color-main: #7c1f1f; 
+@logo-color-second: #515151;
+@bk-color-top: #eaeaea; 
+@txt-bot-color: #f8f8f8;
 
 body{
-	
+   margin:0px; 
+   background: url("../img/pixelbk_top.jpg") repeat-y; 
+   background-color: @bk-color-top; 
 }
+
+textarea{
+     border: 3px solid white; 
+    -webkit-box-shadow: 
+      inset 0 0 8px  rgba(0,0,0,0.1),
+            0 0 16px rgba(0,0,0,0.1); 
+    -moz-box-shadow: 
+      inset 0 0 8px  rgba(0,0,0,0.1),
+            0 0 16px rgba(0,0,0,0.1); 
+    box-shadow: 
+      inset 0 0 8px  rgba(0,0,0,0.1),
+            0 0 16px rgba(0,0,0,0.1); 
+    padding: 8px;
+    background: rgba(255,255,255,0.5);
+}
+
+
+#header{
+    overflow:hidden; 
+    margin-top:5px; 
+}
+
+#logo{
+    width: 90%;
+    margin:0 auto; 
+    padding-top: 25px; 
+    border-bottom: 2px solid @logo-color-main; 
+
+  #logo_wrap{
+     margin-top: -15px; 
+  }
+
+	h1{
+	  color: @logo-color-second; 
+	  font-size: 40px; 
+	  float:left; 
+    margin-bottom: 0px; 
+    }
+
+    span.emphasis{
+	  color: @logo-color-main; 
+	  font-family: Georgia; 
+    }
+
+    span.pixel{
+      font-family: arcade; 
+      font-size:58px; 
+      position: relative;
+      top:12.5px; 
+    }
+
+    img{
+      float: left; 
+      position: relative;
+      bottom: 14px;
+      right: 19px;
+    }
+
+    h2{
+       color: @logo-color-second;
+       font-size: 16px;
+       float: left;
+       clear: both;
+       margin: -7px 0 5px 0; 
+    }
+}
+
+#split img{
+  width: 100%; 
+}
+
+
+#body_top{
+	clear:both;
+  margin-bottom: -15px; 
+
+  #inner{
+    border-top: 2px solid @logo-color-main; 
+    width: 90%;
+    margin:0 auto;
+  }
+
+   p{
+     font-size: 13px; 
+     color:@logo-color-second; 
+   }
+
+    textarea {
+      width:46%;  
+      margin-bottom: 16px; 
+    }
+
+	#txt_dom{
+       float:left; 
+	}
+
+	#txt_css{
+       float:right; 
+	}  
+
+  #testing_area{
+     display:none; 
+  }
+
+  #error_log{
+     padding-top:2px; 
+     clear:both;
+
+     p{
+       color: @logo-color-main; 
+     }
+  }
+
+  #btn_wrap{
+     clear:both; 
+     width: 83px;
+     margin:0 auto; 
+     position: relative;
+     top: 35px; 
+     left:5px;
+
+  }
+
+  .btn_convert{    
+     background-color: lighten(@logo-color-main, 15%);
+    -moz-border-radius:9px;
+    -webkit-border-radius:9px;
+    border-radius:9px;
+    border:3px solid @bk-color-top;
+    cursor:pointer;
+    color:#ffffff;
+    padding:9px 15px 4px 15px;
+    text-shadow:0px 1px 0px #2f6627;
+    font: 16px arcade;
+}
+
+  .btn_convert:hover{
+     background-color: @logo-color-main;
+     color: darken(#fff, 8%); 
+  }
+
+   #options{
+      padding-top: 20px; 
+
+
+      p{
+        float:left; 
+      }
+
+      p.fake_link:hover{
+         color: darken(@logo-color-main, 5%);  
+      }
+
+      img{
+        float:left; 
+        position: relative;
+        top: 14px;
+        left:5px;  
+      }
+
+      #options_top a{
+         text-decoration:none; 
+      }
+
+      #options_display{
+         clear:both; 
+         float: left;
+
+         .opt_group{
+            display:block;
+            padding-bottom: 10px; 
+
+            p{
+              margin:0 6px 0 0; 
+              padding:3px; 
+            }
+         } 
+      }
+
+   }
+
+  }
+
+
+#body_bot{
+  background-color: @logo-color-main; 
+  width:100%; 
+  margin-top:-10px;  
+
+   p{
+     color: darken(@bk-color-top, 5%); 
+     font-size: 13px; 
+     margin-top: 5px; 
+   }
+
+  #inner{
+     width:90%;
+     margin:0 auto; 
+     overflow: hidden; 
+  }
+
+  textarea{
+     border-color: darken(@bk-color-top, 5%);
+     width: 97.4%;
+     float:left;  
+     color: @txt-bot-color; 
+
+  }
+}
+
+  #footer{
+    background:@logo-color-main; 
+    margin:0;
+    padding: 25px 0 15px 0; 
+    overflow: hidden; 
+
+    p{
+      color: darken(@bk-color-top, 12%); 
+      font-size: 9px; 
+      width:90%;
+      margin:0 auto; 
+      text-align: right; 
+    }
+  }

@@ -1,0 +1,81 @@
+#header{
+width:80%;  /* Original width of this element:960px. It's context container is #testing_area, width:1200px */
+  margin:0 auto;
+}
+
+ul{
+width:41.66666666666667%;  /* Original width of this element:500px. It's context container is #testing_area, width:1200px */
+  margin: 0 auto;
+  text-decoration: none;
+}
+
+  ul li{
+    float: left;
+width:20%;  /* Original width of this element:100px. It's context container is 
+
+ul, width:500px */
+}
+
+#body_top{
+width:80%;  /* Original width of this element:960px. It's context container is #testing_area, width:1200px */
+  margin:0 auto;
+  clear:both;
+  overflow:hidden;
+}
+
+   #body_top .left{
+     border:1px solid black;
+     height: 400px;
+     float:left;
+width:46.875%;  /* Original width of this element:450px. It's context container is 
+
+#body_top, width:960px */
+}
+
+   #body_top .right{
+      border:1px solid black;
+      height:400px;
+      float:right;
+width:46.875%;  /* Original width of this element:450px. It's context container is 
+
+#body_top, width:960px */
+}
+
+
+#body_bot{
+width:80%;  /* Original width of this element:960px. It's context container is #testing_area, width:1200px */
+    margin: 0 auto;
+    clear:both;
+    overflow: hidden;
+}
+
+   #body_bot .left{
+      border:1px solid black;
+      height:200px;
+      float:left;
+width:32.29166666666667%;  /* Original width of this element:310px. It's context container is 
+
+
+#body_bot, width:960px */
+}
+
+   #body_bot .mid{
+      border:1px solid black;
+      height:200px;
+      float:left;
+width:32.29166666666667%;  /* Original width of this element:310px. It's context container is 
+
+
+#body_bot, width:960px */
+      margin: 0 12px;
+}
+
+   #body_bot .right{
+      border:1px solid black;
+      height:200px;
+      float:right;
+width:32.29166666666667%;  /* Original width of this element:310px. It's context container is 
+
+
+#body_bot, width:960px */
+}

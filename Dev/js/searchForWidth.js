@@ -1,9 +1,7 @@
 define(["jquery"], function($){
    
-   var searchForWidth = function(){
-      
+   var searchForWidth = function(){  
    }
-   
 
    // takes the CSS as a string from a defined textbox.  
    // Removes all spaces and newlines from the text, and stores it into an array split by the character "}"

@@ -1,44 +1,91 @@
-<!doctype html>
+<!DOCTYPE html>
 
 <html lang="en">
 <head>
-  <meta charset="utf-8">
+    <meta charset="utf-8">
 
-  <title>PIXEL - SMASH</title>
-  <meta name="description" content="The HTML5 Herald">
-  <meta name="author" content="Michael Du">
-
-  <link rel="stylesheet" href="style/main.css">
-
-  <!--[if lt IE 9]>
+    <title>PixelSMASH</title>
+    <meta content="The HTML5 Herald" name="description">
+    <meta content="Michael Du" name="author">
+    <link href="style/main.css" rel="stylesheet"><!--[if lt IE 9]>
   <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
 </head>
 
 <body>
-   
-<h1><span class="emphasis">Pixel</span>SMASH </h1> 
+    <div id="header">
+        <div id="logo">
+            <div id="logo_wrap">
+        <h1><span class="pixel">Pixel</span><span class=
+        "emphasis">SMASH</span></h1><img alt="hammertime" src=
+        "img/hammer.png">
+             </div> 
+        <h2> An automatic Responsive Template Generator </h2>
+        </div>
+    </div>
 
-   Put your DOM on the left, your CSS on the right, and I'll spit out the un-pixalated,
-   responsive equivalent: 
+    <div id="body_top">
+        <div id="inner">
+           
+            <p> 
+            Put your DOM on the left, your CSS on the right, and I'll spit out
+            the un-pixalated, responsive equivalent:</p> 
+            <textarea id="txt_dom" placeholder="HTML DOM here" rows="25">
+</textarea> 
+            <textarea id="txt_css" placeholder="CSS here" rows="25">
+</textarea><br>
 
-  <br /> 
-  <textarea rows="15" cols="60" placeholder="HTML DOM here" id="txt_dom"></textarea> 
-  <textarea rows="15" cols="60" placeholder="CSS here" id="txt_css"></textarea> <br/> 
-  <input type="text" placeholder="Screen Width (if unspecified, default: 1400px)" id="txt_maxWidth" style="width:400px;" /> 
-  <button class="btn_convert" type="button"> Convert </button> 
+            <div id="options">
+                <div id="options_top">
+                    <a href="#" class="options_link"> <p class="fake_link"> Customization Options: </p> <img src="img/triangle.png"></a>  
+                </div>
 
-  <div id="testing_area" style="display:none">
-  
-  </div> 
+                <div id="options_display" style="display:none">
+                  <div class="opt_group">
+                  <p> Width of screen: </p> 
+                  <input id="txt_maxWidth" placeholder=
+                 "(default: 1200px)" style=
+                 "width:400px;" type="text">
+                  </div>
+                  <div class="opt_group">
+                  <p> Max Decimal places (Leave blank to show all): </p> 
+                  <input id="txt_round" type="number" min="1" max="8" /> 
+                  </div> 
+                  <div class="opt_group">
+                  <p> Auto-generate Comments: </p>
+                  <input type="checkbox" name="comments" id="cb_comments" checked="checked" /> 
+                  </div>
 
-  <br/><br/> Your responsive CSS output below: </br> 
-  
-  <textarea rows="15" cols="60" id="txt_output"></textarea> 
+                </div>
+ 
+            </div>
 
-<script src="js/vendor/Requirejs/require.js"> </script> 
-<script src="js/main.js"> </script> 
-<script src="js/initiate.js"> </script> 
+            <div id="testing_area"></div>
 
+            <div id="error_log"></div><br>
+
+            <div id="btn_wrap">
+              <button class="btn_convert" type=
+              "button">SMASH</button>
+            </div>
+        </div>
+    </div> 
+
+    <div id="split"><img alt="background split" src=
+        "img/transition.png"></div>
+
+        <div id="body_bot">       
+            <div id="inner">
+                <p> Your new and responsive CSS will generate here: </p> 
+                <textarea cols="60" id="txt_output" rows="15"></textarea>
+            </div>
+        </div>
+
+       
+       <div id="footer">
+          <p> Copyright 2014 Michael Du // Sapient Nitro </p> 
+       </div>
+        <script src="js/vendor/Requirejs/require.js"></script> <script src="js/main.js"></script> <script src="js/initiate.js"></script> 
+    </div>
 </body>
 </html>
